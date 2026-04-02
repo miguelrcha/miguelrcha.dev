@@ -18,13 +18,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Miguel Rocha",
     description: "Intern Software Engineer",
-    images: [{ url: "https://i.postimg.cc/QxNf6tMw/preview.png" }],
+    images: [{ url: "https://i.postimg.cc/VvNVWYDz/Miguel-Rocha.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Miguel Rocha",
     description: "Intern Software Engineer",
-    images: ["https://i.postimg.cc/QxNf6tMw/preview.png"],
+    images: ["https://i.postimg.cc/VvNVWYDz/Miguel-Rocha.png"],
   },
 };
 
