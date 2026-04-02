@@ -17,7 +17,7 @@ export default function Icon() {
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://github.com/matheusaudibert.png"
+          src="https://github.com/miguelrcha.png"
           width={32}
           height={32}
           style={{ objectFit: "cover" }}

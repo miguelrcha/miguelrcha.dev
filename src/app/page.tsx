@@ -46,35 +46,47 @@ function YoutubeIcon({ size = 14 }: { size?: number }) {
 // ── Data ──────────────────────────────────────────────────────────────────────
 
 const PERSON = {
-  name: "Matheus Audibert",
-  title: "Intern Software Engineer",
+  name: "Miguel Rocha",
+  title: "Intern Software Engineer / System Development Technial",
   location: "Brazil",
-  avatar: "https://github.com/matheusaudibert.png",
+  avatar: "https://github.com/miguelrcha.png",
   social: [
-    { label: "Email", href: "mailto:contact.audibert@gmail.com", icon: <Mail size={16} /> },
-    { label: "GitHub", href: "https://github.com/matheusaudibert", icon: <GithubIcon size={16} /> },
-    { label: "LinkedIn", href: "https://linkedin.com/in/matheusaudibert", icon: <LinkedinIcon size={16} /> },
-    { label: "Instagram", href: "https://instagram.com/tlvzaudibert", icon: <InstagramIcon size={16} /> },
-    { label: "X / Twitter", href: "https://x.com/audibosta", icon: <XIcon size={16} /> },
-    { label: "YouTube", href: "https://www.youtube.com/@audibert", icon: <YoutubeIcon size={16} /> },
+    { label: "Email", href: "mailto:contact.miguellrochaxavier@gmail.com", icon: <Mail size={16} /> },
+    { label: "GitHub", href: "https://github.com/miguelrcha", icon: <GithubIcon size={16} /> },
+    { label: "LinkedIn", href: "https://linkedin.com/in/miguelrochaxavier", icon: <LinkedinIcon size={16} /> },
+    { label: "Instagram", href: "https://instagram.com/miguel.rcha", icon: <InstagramIcon size={16} /> },
   ],
 };
 
 const WORK_EXPERIENCE = [
   {
-    company: "Itaú Unibanco",
-    companyUrl: "https://www.itau.com.br",
-    companyDescription: "Largest bank in Latin America and one of the largest financial institutions in the world.",
-    role: "Intern Software Engineer",
-    period: "August 2025 - Present",
-    tags: ["Hybrid", "Python", "AWS", "Software Architecture", "MySQL"],
+    company: "ArcelorMittal Brasil",
+    companyUrl: "https://www.arcelormittal.com",
+    companyDescription: "One of the largest steel producers in the world.",
+    role: "Innovation & AI Intern / STEM",
+    period: "Jun 2025 - Present",
+    tags: ["Home-office", "Power Platform", "Dataflow", "Software Architecture", "UX/UI"],
     bullets: [
-      "Owned end-to-end development of an internal product impacting multiple directorates, spanning from architecture design and technical decision-making to business stakeholder alignment and product demos.",
-      "Built the full AWS infrastructure using ECS, Lambda, Athena, S3, RDS, IAM, and VPC, with a Python/Streamlit frontend, enabling scalable and secure delivery.",
-      "Democratized workforce intelligence across Itaú by centralizing data on employee movements, open positions, and headcount costs into a single, director-level platform.",
+      "Spearheaded the development of a Power Platform-based solution that streamlined the process of gathering and analyzing data from over 20 different sources, resulting in a 30% reduction in time spent on data collection and analysis.",
+      "Collaborated with cross-functional teams to identify pain points in existing workflows and developed user-friendly interfaces that enhanced the overall user experience, leading to increased adoption of the new system.",
     ],
   },
 ];
+
+const FORMATION = [
+  {
+    company: "Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE)",
+    companyUrl: "https://ifce.edu.br",
+    companyDescription: "A renowned Brazilian federal institution offering high-quality education in various fields.",
+    role: "Technical System Development",
+    period: "2021 - 2024",
+    tags: ["On-site", "Java", "Spring Boot", "Software Architecture", "UX/UI"],
+    bullets: [
+      "Graduated with a strong academic record, consistently ranking in the top 10% of the class and receiving multiple scholarships for academic excellence.",
+      "Led a team of 4 students in a capstone project to develop a web application for local businesses, which was recognized for its innovative design and functionality at the annual tech fair.",
+    ],
+  }
+]
 
 const PROJECTS = [
   {
@@ -83,30 +95,12 @@ const PROJECTS = [
     tags: ["Discord.js", "API", "Community"],
     href: "https://newsletterbot.audibert.dev/",
   },
-  {
-    title: "Cardzera",
-    description: "A Discord bot that generates a custom card for your Discord server.",
-    tags: ["Discord.js", "SVG", "Community"],
-    href: "https://github.com/matheusaudibert/cardzera",
-  },
-  {
-    title: "Aprova",
-    description: "A project built for Alura AI Imersion. It got first place. I also made a video about it.",
-    tags: ["Python", "Streamlit", "Gemini SDK"],
-    href: "https://github.com/matheusaudibert/projeto-aprova",
-  },
-  {
-    title: "Commitly",
-    description: "A web-based tool that easly generates commits for your GitHub profile.",
-    tags: ["GitHub", "Next.js", "MongoDB"],
-    href: "https://commitly.shardweb.app/",
-  },
 ];
 
 const SKILLS = [
-  "Python", "Node.js", "Discord.js", "JavaScript", "AWS",
-  "MySQL", "MongoDB", "API", "Software Architecture", "Serverless",
-  "Design Systems", "Git",
+  "Java", "Spring Boot", "Node.js", "JavaScript", "Typescript",
+  "MySQL", "PostgreSQL", "HTML", "CSS", "Software Architecture", "UX/UI",
+  "Design Systems", "Git", "Python", "PHP", "Arduino",
 ];
 
 // ── Sub-components ────────────────────────────────────────────────────────────
@@ -248,6 +242,42 @@ export default function Home() {
                   <div className="mt-2 sm:hidden">
                     <ul className="inline-flex list-none p-0 -mx-2 flex-wrap gap-1">
                       {job.tags.map((tag) => <li key={tag}><SecondaryBadge>{tag}</SecondaryBadge></li>)}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* ── Formation ── */}
+          <section className="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
+            <h2 className="text-xl font-bold">Formation</h2>
+            <div className="flex flex-col gap-y-4">
+              {FORMATION.map((education) => (
+                <div key={education.company} className="rounded-lg py-1 print:py-0" style={{ backgroundColor: "hsl(var(--card))", color: "hsl(var(--card-foreground))" }}>
+                  <div className="flex flex-col space-y-1.5 print:space-y-1">
+                    <div className="flex items-center justify-between gap-x-2 text-base">
+                      <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none flex-wrap gap-y-1">
+                        <a href={education.companyUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">{education.company}</a>
+                        <ul className="list-none p-0 hidden gap-x-1 sm:inline-flex">
+                          {education.tags.map((tag) => <li key={tag}><SecondaryBadge>{tag}</SecondaryBadge></li>)}
+                        </ul>
+                      </h3>
+                      <div className="text-sm tabular-nums shrink-0" style={{ color: "#6b7280" }}>{education.period}</div>
+                    </div>
+                    <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">{education.role}</h4>
+                    {education.companyDescription && (
+                      <p className="font-mono text-xs text-pretty" style={{ color: "hsl(var(--muted-foreground))" }}>{education.companyDescription}</p>
+                    )}
+                  </div>
+                  <div className="mt-2 text-xs print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground) / 0.8)" }}>
+                    <ul className="list-inside list-disc space-y-1">
+                      {education.bullets.map((bullet, i) => <li key={i}>{bullet}</li>)}
+                    </ul>
+                  </div>
+                  <div className="mt-2 sm:hidden">
+                    <ul className="inline-flex list-none p-0 -mx-2 flex-wrap gap-1">
+                      {education.tags.map((tag) => <li key={tag}><SecondaryBadge>{tag}</SecondaryBadge></li>)}
                     </ul>
                   </div>
                 </div>
