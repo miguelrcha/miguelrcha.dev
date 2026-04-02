@@ -75,25 +75,37 @@ const WORK_EXPERIENCE = [
 
 const FORMATION = [
   {
-    company: "Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE)",
-    companyUrl: "https://ifce.edu.br",
-    companyDescription: "A renowned Brazilian federal institution offering high-quality education in various fields.",
-    role: "Technical System Development",
-    period: "2021 - 2024",
+    company: "Centro Universitário Católica de Santa Catarina - Joinville",
+    companyUrl: "https://www.catolicasc.org.br/",
+    companyDescription: "A prestigious university in Brazil known for its strong emphasis on technology and innovation.",
+    role: "Bachelor Software Engineering",
+    period: "Fev 2026 - Fev 2030 (expected)",
     tags: ["On-site", "Java", "Spring Boot", "Software Architecture", "UX/UI"],
     bullets: [
-      "Graduated with a strong academic record, consistently ranking in the top 10% of the class and receiving multiple scholarships for academic excellence.",
-      "Led a team of 4 students in a capstone project to develop a web application for local businesses, which was recognized for its innovative design and functionality at the annual tech fair.",
+      "Maintained a consistent academic record with a current GPA of 8.5/10, demonstrating strong dedication and performance in coursework.",
+      "Completed over 20 projects across various domains, including web development, mobile applications, and software architecture, showcasing versatility and practical application of skills.",
+    ],
+  },
+  {
+    company: "SENAI - Escola SESI de Referência - Joinville",
+    companyUrl: "https://www.catolicasc.org.br/",
+    companyDescription: "A prestigious university in Brazil known for its strong emphasis on technology and innovation.",
+    role: "Technical Degree System Development ",
+    period: "Fev 2023 - Dez 2025",
+    tags: ["Software Development", "Database", "Programming", "Full-stack", "IOT", "Logic Programming"],
+    bullets: [
+      "Built Smarttrain during a technical course at SENAI/SC Joinville, developing a mobile app and web platform for railway management focused on Smart Cities and Digital Transformation in Transportation. Worked on UX/UI mobile-first mockups, website development, database implementation, and real-time dashboard features for train status, schedules, alerts, route management, preventive maintenance, performance reports, and energy consumption analysis.",
+      "Also presented the project at multiple SENAI Family Day events, showcasing its impact on innovation and transportation digitalization.",
     ],
   }
 ]
 
 const PROJECTS = [
   {
-    title: "Discord Newsletter",
-    description: "A Discord bot that automatically delivers Filipe Deschamps' newsletter updates.",
-    tags: ["Discord.js", "API", "Community"],
-    href: "https://newsletterbot.audibert.dev/",
+    title: "Talkbridge AI",
+    description: "Interactive agentic that resides in a terminal, understands what is being transmitted via audio, and automatically translates it into any language you want to learn.",
+    tags: ["Python", "LLM Integration"],
+    href: "https://github.com/talkbridge-ai/talkbridge-ai-prospect",
   },
 ];
 
@@ -197,19 +209,8 @@ export default function Home() {
           <section className="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
             <h2 className="text-xl font-bold">About</h2>
             <p className="font-mono text-sm text-pretty" style={{ color: "hsl(var(--foreground) / 0.8)" }}>
-              Software Engineer focused on building scalable cloud-native systems and data-driven internal products. Experienced in end-to-end delivery from architecture to stakeholder alignment. Beyond engineering, I create tech content on{" "}
-              <a href="https://www.youtube.com/@audibert" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: "rgba(255, 0, 0, 0.75)" }}>
-                @audibert
-              </a>
-              , manage a programming community on Discord with nearly 20k members (
-              <a href="https://discord.gg/programador" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: "rgba(88, 101, 242, 0.85)" }}>
-                @servidordosprogramadores
-              </a>
-              ), and I&apos;m currently building my own SaaS,{" "}
-              <a href="" rel="noopener noreferrer" className="hover:underline" style={{ color: "rgba(88, 242, 165, 0.85)" }}>
-                @codario
-              </a>
-              .
+              Graduated in Systems Development Technician and a Software Engineering student. I'm passionate about software development and solving real-world problems, and I thrive in dynamic environments. I enjoy continuous learning and professional growth, exploring new technologies and methodologies to enhance my expertise through experiences, online courses, literature, and networking.{" "}
+              
             </p>
           </section>
 
