@@ -110,8 +110,8 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  "Java", "Spring Boot", "Node.js", "JavaScript", "Typescript",
-  "MySQL", "PostgreSQL", "HTML", "CSS", "Software Architecture", "UX/UI",
+  "Swift", "Java", "Spring Boot", "Node.js", "JavaScript", "Typescript",
+  "MySQL", "PostgreSQL", "Software Architecture", "UX/UI",
   "Design Systems", "Git", "Python", "PHP", "Arduino",
 ];
 
