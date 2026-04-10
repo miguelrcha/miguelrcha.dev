@@ -49,7 +49,7 @@ const PERSON = {
   name: "Miguel Rocha",
   title: "Intern Software Engineer / System Development Technial",
   location: "Brazil",
-  avatar: "https://github.com/miguelrcha.png",
+  avatar: "https://github.com/miguelrcha.png", // Att profile icon
   social: [
     { label: "Email", href: "mailto:contact.miguellrochaxavier@gmail.com", icon: <Mail size={16} /> },
     { label: "GitHub", href: "https://github.com/miguelrcha", icon: <GithubIcon size={16} /> },
