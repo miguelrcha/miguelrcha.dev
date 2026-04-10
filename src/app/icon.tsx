@@ -10,19 +10,18 @@ export default function Icon() {
         style={{
           width: 32,
           height: 32,
-          borderRadius: "50%",
-          overflow: "hidden",
+          background: "#000",
+          borderRadius: 15,
           display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "#fff",
+          fontSize: 18,
+          fontWeight: 700,
+          fontFamily: "Arial, sans-serif",
         }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="https://github.com/miguelrcha.png"
-          width={32}
-          height={32}
-          style={{ objectFit: "cover" }}
-          alt=""
-        />
+        M
       </div>
     ),
     { ...size }
