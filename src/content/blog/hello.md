@@ -1,8 +1,8 @@
 ---
-title: "Hello"
+title: "🧑‍💻"
 description: "first post (test post)."
 tags: ["Test", "Personal"]
-date: "2026-03-31"
+date: "2026-04-13"
 ---
 
 # Hello
@@ -26,12 +26,9 @@ This is an image (with html):
 
 This is a list:
 
-- I'm 21 years old
-- I love little big planet 2
-- I can make my tongue touch my nose
+- I'm 18 years old
+- I love graveyard keeper, looking forward to the second game, release in 2026 
+- I can create apps for iOS (long live capitalism btw )
 
-# JOIN MY DISCORD SERVER RIGHT NOW
 
-[![Discord Server Card](https://cardzera.audibert.dev/api/1112920281367973900?backgroundColor=ffffff&buttonColor=000000&buttonBorderRadius=0&buttonText=join%20(im%20being%20serious)&buttonTextColor=ffffff&infoColor=353535&nameColor=000000&borderRadius=0&t={timestamp})](https://discord.gg/programador)
-
-thanks, peace!
+thanks, for visit!
