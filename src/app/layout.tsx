@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Miguel Rocha",
+  title: "Miguel Rocha Xavier",
   description: "Intern Software Engineer",
   metadataBase: new URL(
     process.env.VERCEL_URL
@@ -16,13 +16,13 @@ export const metadata: Metadata = {
       : "http://localhost:3000"
   ),
   openGraph: {
-    title: "Miguel Rocha",
+    title: "Miguel Rocha Xavier",
     description: "Intern Software Engineer",
     images: [{ url: "https://i.postimg.cc/VvNVWYDz/Miguel-Rocha.png" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Miguel Rocha",
+    title: "Miguel Rocha Xavier",
     description: "Intern Software Engineer",
     images: ["https://i.postimg.cc/VvNVWYDz/Miguel-Rocha.png"],
   },
