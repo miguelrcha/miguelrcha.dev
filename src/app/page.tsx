@@ -107,6 +107,12 @@ const PROJECTS = [
     tags: ["Python", "LLM Integration"],
     href: "https://github.com/talkbridge-ai/talkbridge-ai-prospect",
   },
+  {
+    title: "Lumok - Light meets identity ",
+    description: "Say hello to Lumok — a new way to unlock your Mac, powered by light and identity. Say goodbye to passwords and interruptions: with Lumok, your Mac recognizes you instantly, turning everyday access into something seamless and effortless.",
+    tags: ["In Progress", "Swift", "Perl"],
+    href: "",
+  },
 ];
 
 const SKILLS = [

@@ -1,7 +1,7 @@
 ---
-title: "Graveyard Keeper App Idea 💡"
-description: "an idea for an iOS app + Java backend inspired by Graveyard Keeper."
-tags: ["Swift", "iOS Development", "MDX"]
+title: "Feature for macOS"
+description: "an idea for an macOS feature 💎 inspired in FaceID."
+tags: ["Feature", "My Projects"]
 date: "2026-04-13"
 ---
 
