@@ -54,7 +54,7 @@ const PERSON = {
     { label: "Email", href: "mailto:contact.miguellrochaxavier@gmail.com", icon: <Mail size={16} /> },
     { label: "GitHub", href: "https://github.com/miguelrcha", icon: <GithubIcon size={16} /> },
     { label: "LinkedIn", href: "https://linkedin.com/in/miguelrochaxavier", icon: <LinkedinIcon size={16} /> },
-    { label: "Instagram", href: "https://instagram.com/miguel.rcha", icon: <InstagramIcon size={16} /> },
+    { label: "X", href: "https://x.com/miguel_rcha", icon: <XIcon size={16} /> },
   ],
 };
 
