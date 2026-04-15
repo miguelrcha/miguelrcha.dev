@@ -116,9 +116,9 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  "Swift", "Java", "Spring Boot", "Node.js", "JavaScript", "Typescript",
+  "Java", "Spring Boot", "Node.js", "JavaScript", "Typescript",
   "MySQL", "PostgreSQL", "Software Architecture", "UX/UI",
-  "Design Systems", "Git", "Python", "PHP", "Arduino",
+  "Design Systems", "Git", "Python", "Swift", "SwiftUI",
 ];
 
 // ── Sub-components ────────────────────────────────────────────────────────────
