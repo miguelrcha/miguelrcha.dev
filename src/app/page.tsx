@@ -60,17 +60,30 @@ const PERSON = {
 
 const WORK_EXPERIENCE = [
   {
+    company: "EternosDevs",
+    companyUrl: "",
+    companyDescription: "Eternos SMP is a Minecraft server focused on creating a fun and engaging experience for players of all ages, with a strong emphasis on community and creativity.",
+    role: "Co-founder & Technical Lead",
+    period: "Apr 26 - Present",
+    tags: ["Remote", "Backend","Java", "REST API", "MySQL", ],
+    bullets: [
+      "Co-founded the project with two partners and leading the technical development, including programming, system architecture, and design decisions.",
+      "Currently building a Minecraft SMP server (pre-launch), developing backend systems in Java and continuously improving my backend development skills."
+    ],
+  },
+  {
     company: "ArcelorMittal Brasil",
-    companyUrl: "https://www.arcelormittal.com",
+    companyUrl: "https://brasil.arcelormittal.com/",
     companyDescription: "One of the largest steel producers in the world.",
     role: "Innovation & AI Intern / STEM",
     period: "Jun 2025 - Present",
-    tags: ["Home-office", "Power Platform", "System Development", "UX/UI Research"],
+    tags: ["Remote", "Power Platform", "System Development", "UX/UI Research"],
     bullets: [
       "Spearheaded the development of a Power Platform-based solution that streamlined the process of gathering and analyzing data from over 20 different sources, resulting in a 30% reduction in time spent on data collection and analysis.",
       "Collaborated with cross-functional teams to identify pain points in existing workflows and developed user-friendly interfaces that enhanced the overall user experience, leading to increased adoption of the new system.",
     ],
-  },
+  }
+
 ];
 
 const FORMATION = [
@@ -79,7 +92,7 @@ const FORMATION = [
     companyUrl: "https://www.catolicasc.org.br/",
     companyDescription: "A prestigious university in Brazil known for its strong emphasis on technology and innovation.",
     role: "Bachelor Software Engineering",
-    period: "Fev 2026 - Fev 2030 (expected)",
+    period: "Fev 2026 - Fev 2030",
     tags: ["On-site", "Java", "Spring Boot", "Software Architecture", "UX/UI"],
     bullets: [
       "Maintained a consistent academic record with a current GPA of 8.5/10, demonstrating strong dedication and performance in coursework.",
@@ -216,7 +229,7 @@ export default function Home() {
             <h2 className="text-xl font-bold">About</h2>
             <p className="font-mono text-sm text-pretty" style={{ color: "hsl(var(--foreground) / 0.8)" }}>
               Graduated in Systems Development Technician and a Software Engineering student. I'm passionate about software development and solving real-world problems, and I thrive in dynamic environments. I enjoy continuous learning and professional growth, exploring new technologies and methodologies to enhance my expertise through experiences, online courses, literature, and networking.{" "}
-              
+
             </p>
           </section>
 
