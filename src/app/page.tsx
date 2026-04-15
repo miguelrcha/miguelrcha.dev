@@ -65,7 +65,7 @@ const WORK_EXPERIENCE = [
     companyDescription: "One of the largest steel producers in the world.",
     role: "Innovation & AI Intern / STEM",
     period: "Jun 2025 - Present",
-    tags: ["Home-office", "Power Platform", "Dataflow", "Software Architecture", "UX/UI"],
+    tags: ["Home-office", "Power Platform", "System Development", "UX/UI Research"],
     bullets: [
       "Spearheaded the development of a Power Platform-based solution that streamlined the process of gathering and analyzing data from over 20 different sources, resulting in a 30% reduction in time spent on data collection and analysis.",
       "Collaborated with cross-functional teams to identify pain points in existing workflows and developed user-friendly interfaces that enhanced the overall user experience, leading to increased adoption of the new system.",
