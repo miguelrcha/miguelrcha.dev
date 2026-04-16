@@ -65,7 +65,7 @@ const WORK_EXPERIENCE = [
     companyDescription: "Eternos SMP is a Minecraft server focused on creating a fun and engaging experience for players of all ages, with a strong emphasis on community and creativity.",
     role: "Co-founder & Backend Developer",
     period: "Apr 26 - Present",
-    tags: ["Remote", "Backend","Java", "REST API", "MySQL", ],
+    tags: ["Remote", "Java", "MySQL" ],
     bullets: [
       "Co-founded the project with two partners and leading the technical development, including programming, system architecture, and design decisions.",
       "Currently building a Minecraft SMP server (pre-launch), developing backend systems in Java and continuously improving my backend development skills."
