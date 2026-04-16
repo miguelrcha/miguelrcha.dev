@@ -93,7 +93,7 @@ const FORMATION = [
     companyDescription: "A prestigious university in Brazil known for its strong emphasis on technology and innovation.",
     role: "Bachelor Software Engineering",
     period: "Fev 2026 - Fev 2030",
-    tags: ["On-site", "Java", "Spring Boot", "Software Architecture", "UX/UI"],
+    tags: [""],
     bullets: [
       "Maintained a consistent academic record with a current GPA of 8.5/10, demonstrating strong dedication and performance in coursework.",
       "Completed over 20 projects across various domains, including web development, mobile applications, and software architecture, showcasing versatility and practical application of skills.",
@@ -105,7 +105,7 @@ const FORMATION = [
     companyDescription: "A prestigious university in Brazil known for its strong emphasis on technology and innovation.",
     role: "Technical Degree System Development ",
     period: "Fev 2023 - Dez 2025",
-    tags: ["Software Development", "Database", "Programming", "Full-stack", "IOT", "Logic Programming"],
+    tags: [""],
     bullets: [
       "Built Smarttrain during a technical course at SENAI/SC Joinville, developing a mobile app and web platform for railway management focused on Smart Cities and Digital Transformation in Transportation. Worked on UX/UI mobile-first mockups, website development, database implementation, and real-time dashboard features for train status, schedules, alerts, route management, preventive maintenance, performance reports, and energy consumption analysis.",
       "Also presented the project at multiple SENAI Family Day events, showcasing its impact on innovation and transportation digitalization.",
