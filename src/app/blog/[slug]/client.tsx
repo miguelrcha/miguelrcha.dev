@@ -66,7 +66,7 @@ function XIcon({ size = 14 }: { size?: number }) {
 /* ── PERSON ── */
 const PERSON = {
   name: "Miguel Rocha Xavier",
-  title: "Intern Software Engineer / System Development Technial",
+  title: "Software Engineer / Intern System Development",
   location: "Brazil",
   avatar: "https://github.com/miguelrcha.png",
   social: [
