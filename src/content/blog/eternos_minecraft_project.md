@@ -5,32 +5,6 @@ tags: ["Community"]
 date: "2026-04-18"
 ---
 
-# Eternos Network
-
-
-**Eternos Network** is a Minecraft SMP server created to deliver a community-driven, creative, and fun experience for players who enjoy interactive survival gameplay.
-
-## About
-
-The server was built with a focus on:
-
-- Classic survival gameplay (SMP)
-- Lightweight and optimized system
-- Active and collaborative community
-- Vanilla experience with quality-of-life improvements
-- With supporter of Mod/Plugin Simple Voice Chat
-
-## Overview
-
-The goal of **Eternos Network** is to grow as an SMP community where players can:
-
-- Play together without complexity
-- Create stories within the world
-- Participate in future events
-- Help evolve the server alongside the developers
-
-<br>
-
 # WELCOME TO ETERNOS!!!
 
 ![IMAGE](https://i.postimg.cc/nVPzRLb8/minecraft-title-(2).png)
