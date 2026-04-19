@@ -8,6 +8,7 @@ date: "2026-04-18"
 # WELCOME TO ETERNOS!!!
 
 ![IMAGE](https://i.postimg.cc/nVPzRLb8/minecraft-title-(2).png)
+![IMAGE](https://i.postimg.cc/9QgRzLkP/bannereternos.png)
 
 ## Contributors
 
