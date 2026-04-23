@@ -63,7 +63,7 @@ const WORK_EXPERIENCE = [
   {
     company: "EternosDevs",
     companyUrl: "",
-    companyDescription: "Eternos SMP is a Minecraft server focused on creating a fun and engaging experience for players of all ages, with a strong emphasis on community and creativity.",
+    companyDescription: "Minecraft server focused on survival multiplayer [SMP] and engaging experience for players of all ages, with a strong emphasis on community and creativity.",
     role: "Co-founder & Backend Developer",
     period: "Apr 26 - Present",
     tags: ["Remote", "Java", "MySQL" ],
