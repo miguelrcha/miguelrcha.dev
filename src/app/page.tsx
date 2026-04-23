@@ -55,6 +55,7 @@ const PERSON = {
     { label: "GitHub", href: "https://github.com/miguelrcha", icon: <GithubIcon size={16} /> },
     { label: "LinkedIn", href: "https://linkedin.com/in/miguelrochaxavier", icon: <LinkedinIcon size={16} /> },
     { label: "X", href: "https://x.com/miguel_rcha", icon: <XIcon size={16} /> },
+    { label: "Youtube", href: "https://www.youtube.com/@miguelrcha", icon: <YoutubeIcon size={16} /> },
   ],
 };
 
