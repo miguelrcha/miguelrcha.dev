@@ -64,7 +64,7 @@ const WORK_EXPERIENCE = [
     company: "EternosDevs",
     companyUrl: "",
     companyDescription: "Minecraft server focused on survival multiplayer [SMP] and engaging experience for players of all ages, with a strong emphasis on community and creativity.",
-    role: "Co-founder & Backend Developer",
+    role: "Co-founder & Backend Engineer",
     period: "Apr 26 - Present",
     tags: ["Remote", "Java", "MySQL" ],
     bullets: [
