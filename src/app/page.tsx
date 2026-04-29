@@ -65,7 +65,7 @@ const WORK_EXPERIENCE = [
     companyUrl: "",
     companyDescription: "Minecraft server focused on survival multiplayer [SMP] and engaging experience for players of all ages, with a strong emphasis on community and creativity.",
     role: "Co-founder & Backend Engineer",
-    period: "Apr 26 - Present",
+    period: "Apr 2026 - Present",
     tags: ["Remote", "Java", "MySQL" ],
     bullets: [
       "Co-founded the project with two partners and leading the technical development, including programming, system architecture, and design decisions.",
