@@ -95,6 +95,9 @@ const FORMATION = [
     role: "Bachelor Software Engineering",
     period: "Fev 2026 - Fev 2030",
     tags: [""],
+    bullets: [
+      "Currently pursuing a degree in Software Engineering at Católica SC (1st semester), building foundational knowledge in programming, systems development, and software design principles.",
+    ],
   },
   {
     company: "SENAI - Escola SESI de Referência - Joinville",
