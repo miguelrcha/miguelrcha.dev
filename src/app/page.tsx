@@ -80,8 +80,8 @@ const WORK_EXPERIENCE = [
     period: "Jun 2025 - Present",
     tags: ["Remote", "Power Platform"],
     bullets: [
-      "Spearheaded the development of a Power Platform-based solution that streamlined the process of gathering and analyzing data from over 20 different sources, resulting in a 30% reduction in time spent on data collection and analysis.",
-      "Collaborated with cross-functional teams to identify pain points in existing workflows and developed user-friendly interfaces that enhanced the overall user experience, leading to increased adoption of the new system.",
+      "Worked on a STEM scholarship program focused on process transformation and the creation of digital solutions that drive operational efficiency and data-driven decision-making.",
+      "With a strong focus on System Development, I design and build scalable applications using Power Platform, developing advanced dashboards and automated workflows to ensure productivity, reduce rework, and optimize user experience.",
     ],
   }
 
@@ -96,8 +96,7 @@ const FORMATION = [
     period: "Fev 2026 - Fev 2030",
     tags: [""],
     bullets: [
-      "Maintained a consistent academic record with a current GPA of 8.5/10, demonstrating strong dedication and performance in coursework.",
-      "Completed over 20 projects across various domains, including web development, mobile applications, and software architecture, showcasing versatility and practical application of skills.",
+      "",
     ],
   },
   {
