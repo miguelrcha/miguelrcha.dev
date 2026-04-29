@@ -95,9 +95,6 @@ const FORMATION = [
     role: "Bachelor Software Engineering",
     period: "Fev 2026 - Fev 2030",
     tags: [""],
-    bullets: [
-      "",
-    ],
   },
   {
     company: "SENAI - Escola SESI de Referência - Joinville",
