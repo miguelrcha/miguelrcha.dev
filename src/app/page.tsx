@@ -61,18 +61,6 @@ const PERSON = {
 
 const WORK_EXPERIENCE = [
   {
-    company: "EternosDevs",
-    companyUrl: "",
-    companyDescription: "Minecraft server focused on survival multiplayer [SMP] and engaging experience for players of all ages, with a strong emphasis on community and creativity.",
-    role: "Co-founder & Backend Engineer",
-    period: "Apr 2026 - Present",
-    tags: ["Remote", "Java", "MySQL" ],
-    bullets: [
-      "Co-founded the project with two partners and leading the technical development, including programming, system architecture, and design decisions.",
-      "Currently building a Minecraft SMP server (pre-launch), developing backend systems in Java and continuously improving my backend development skills."
-    ],
-  },
-  {
     company: "ArcelorMittal Brasil",
     companyUrl: "https://brasil.arcelormittal.com/",
     companyDescription: "One of the largest steel producers in the world.",
@@ -82,6 +70,18 @@ const WORK_EXPERIENCE = [
     bullets: [
       "Worked on a STEM scholarship program focused on process transformation and the creation of digital solutions that drive operational efficiency and data-driven decision-making.",
       "With a strong focus on System Development, I design and build scalable applications using Power Platform, developing advanced dashboards and automated workflows to ensure productivity, reduce rework, and optimize user experience.",
+    ],
+  },
+  {
+    company: "EternosDevs",
+    companyUrl: "",
+    companyDescription: "Minecraft server focused on survival multiplayer [SMP] and engaging experience for players of all ages, with a strong emphasis on community and creativity.",
+    role: "Co-founder & Backend Engineer",
+    period: "Apr 2026 - Present",
+    tags: ["Remote", "Java", "MySQL" ],
+    bullets: [
+      "Co-founded the project with two partners and leading the technical development, including programming, system architecture, and design decisions.",
+      "Currently building a Minecraft SMP server (pre-launch), developing backend systems in Java and continuously improving my backend development skills."
     ],
   }
 
