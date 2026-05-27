@@ -64,7 +64,7 @@ const WORK_EXPERIENCE = [
     company: "ArcelorMittal Brasil",
     companyUrl: "https://brasil.arcelormittal.com/",
     companyDescription: "One of the largest steel producers in the world.",
-    role: "Software Developer Intern / STEM",
+    role: "Software Developer (STEM)",
     period: "Jun 2025 - Present",
     tags: ["Remote", "Power Platform"],
     bullets: [
