@@ -66,7 +66,7 @@ const WORK_EXPERIENCE = [
     companyDescription: "One of the largest steel producers in the world.",
     role: "Software Developer (STEM)",
     period: "Jun 2025 - Present",
-    tags: ["Remote", "Power Platform"],
+    tags: ["Remote", "Intern", "Power Platform"],
     bullets: [
       "Worked on a STEM scholarship program focused on process transformation and the creation of digital solutions that drive operational efficiency and data-driven decision-making.",
       "With a strong focus on System Development, I design and build scalable applications using Power Platform, developing advanced dashboards and automated workflows to ensure productivity, reduce rework, and optimize user experience.",
