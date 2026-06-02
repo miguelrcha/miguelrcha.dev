@@ -47,7 +47,7 @@ function YoutubeIcon({ size = 14 }: { size?: number }) {
 
 const PERSON = {
   name: "Miguel Rocha Xavier",
-  title: "Software Engineer / Intern System Development",
+  title: "Software Engineer",
   location: "Brazil",
   avatar: "https://github.com/miguelrcha.png", // Att profile icon
   social: [
