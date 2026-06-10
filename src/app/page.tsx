@@ -123,9 +123,8 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  "Go", "Java", "Spring Boot", "Next.js/React", "Typescript",
-  "MySQL", "PostgreSQL", "Software Architecture", "UX/UI",
-  "Design Systems", "Git",
+  "Java", "Spring Boot", "Next.js/React", "Typescript", "Golang",
+  "MySQL", "PostgreSQL", "Software Architecture", "Git",
 ];
 
 // ── Sub-components ────────────────────────────────────────────────────────────
