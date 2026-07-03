@@ -103,6 +103,12 @@ const FORMATION = [
 
 const PROJECTS = [
   {
+  title: "Folio",
+  description: "Generate a professional portfolio and ATS-friendly resume from your GitHub in under a minute. Always up to date and ready to share.",
+  tags: ["TypeScript", "Next.js", "Supabase", "GitHub API"],
+  href: "",
+  },
+  {
     title: "Talkbridge AI",
     description: "Interactive agentic that resides in a terminal, understands what is being transmitted via audio, and automatically translates it into any language you want to learn.",
     tags: ["Python", "LLM Integration"],
