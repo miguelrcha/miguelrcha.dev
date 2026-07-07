@@ -68,7 +68,7 @@ const PERSON = {
     { label: "LinkedIn", href: "https://linkedin.com/in/miguelrochaxavier", icon: <LinkedinIcon size={16} /> },
     { label: "X", href: "https://x.com/miguel_rcha", icon: <XIcon size={16} /> },
     { label: "Youtube", href: "https://www.youtube.com/@miguelrcha", icon: <YoutubeIcon size={16} /> },
-    { label: "Folio", href: "https://app-foliohq.vercel.app/miguelrcha", icon: <FolioIcon size={26} /> },
+    { label: "Folio", href: "https://meufolio.dev/miguelrcha", icon: <FolioIcon size={26} /> },
   ],
 };
 
