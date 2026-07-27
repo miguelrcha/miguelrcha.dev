@@ -241,8 +241,7 @@ export default function Home() {
           <section className="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
             <h2 className="text-xl font-bold">About</h2>
             <p className="font-mono text-sm text-pretty" style={{ color: "hsl(var(--foreground) / 0.8)" }}>
-              Graduated in Systems Development Technician and a Software Engineering student. I'm passionate about software development and solving real-world problems, and I thrive in dynamic environments. I founded the <a href="https://www.instagram.com/wearerch/" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: "rgba(0, 0, 255, 0.75)" }}> @wearerch</a> small team building software. I enjoy continuous learning and professional growth, exploring new technologies and methodologies to enhance my expertise through experiences, online courses, literature, and networking.{" "}
-
+              Graduated in Systems Development Technician and a Software Engineering student. I'm passionate about software development and solving real-world problems, and I thrive in dynamic environments.
             </p>
           </section>
 
