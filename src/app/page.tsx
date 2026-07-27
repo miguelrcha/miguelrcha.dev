@@ -73,6 +73,19 @@ const PERSON = {
 };
 
 const WORK_EXPERIENCE = [
+{
+  company: "Alterions",
+  companyUrl: "",
+  companyDescription: "The AI-powered recruiting platform for modern careers.",
+  role: "Founder",
+  period: "Jul 2026 - Present",
+  tags: ["Startup", "AI"],
+  bullets: [
+    "Founded Alterions, an AI startup focused on building intelligent products for the recruiting and hiring market.",
+    "Leading the development of Alterion Careers, an AI-powered platform that aggregates thousands of job opportunities, analyzes job descriptions, and recommends the most relevant positions based on each candidate's profile.",
+    "Designing the platform architecture, backend APIs, machine learning pipelines, and product strategy from concept to deployment.",
+  ],
+},
   {
     company: "ArcelorMittal Brasil",
     companyUrl: "https://brasil.arcelormittal.com/",
