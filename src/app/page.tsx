@@ -74,16 +74,16 @@ const PERSON = {
 
 const WORK_EXPERIENCE = [
 {
-  company: "Alterions",
+  company: "RCH Labs",
   companyUrl: "",
-  companyDescription: "The AI-powered recruiting platform for modern careers.",
-  role: "Founder",
+  companyDescription: "AI-powered software studio.",
+  role: "CEO & Founder",
   period: "Jul 2026 - Present",
-  tags: ["Startup", "AI"],
+  tags: ["Startup"],
   bullets: [
-    "Founded Alterions, an AI startup focused on building intelligent products for the recruiting and hiring market.",
-    "Leading the development of Alterion Careers, an AI-powered platform that aggregates thousands of job opportunities, analyzes job descriptions, and recommends the most relevant positions based on each candidate's profile.",
-    "Designing the platform architecture, backend APIs, machine learning pipelines, and product strategy from concept to deployment.",
+    "Founded RCH Labs, an AI-powered software studio focused on building modern web applications, SaaS products, and custom software for businesses.",
+    "Leading end-to-end product development, from requirements gathering and UI/UX design to backend architecture, cloud infrastructure, deployment, and maintenance.",
+    "Building scalable solutions using TypeScript, React, Next.js, Java, Spring Boot, PostgreSQL, Docker, and AI technologies while managing client relationships and product strategy."
   ],
 },
   {
