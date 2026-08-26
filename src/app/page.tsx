@@ -144,7 +144,7 @@ const PROJECTS = [
 
 const SKILLS = [
   "Java", "Spring Boot", "React/Next.js", "Typescript", "Golang",
-  "MySQL", "PostgreSQL", "Supabase", "REST API", "Software Architecture", "Git",
+  "MySQL", "PostgreSQL", "Supabase", "REST API", "Software Architecture", "Git", "Arduino", "ESP32", "Cloudflare",
 ];
 
 // ── Sub-components ────────────────────────────────────────────────────────────
