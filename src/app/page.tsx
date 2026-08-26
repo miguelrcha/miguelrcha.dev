@@ -76,7 +76,6 @@ const WORK_EXPERIENCE = [
 {
   company: "RCH Labs",
   companyUrl: "",
-  companyDescription: "AI-powered software studio.",
   role: "CEO & Founder",
   period: "Jul 2026 - Present",
   tags: ["Startup"],
@@ -89,7 +88,6 @@ const WORK_EXPERIENCE = [
   {
     company: "ArcelorMittal Brasil",
     companyUrl: "https://brasil.arcelormittal.com/",
-    companyDescription: "One of the largest steel producers in the world.",
     role: "Software Developer",
     period: "Jun 2025 - Present",
     tags: ["Remote", "Intern", "Power Platform"],
@@ -105,7 +103,6 @@ const FORMATION = [
   {
     company: "Centro Universitário Católica de Santa Catarina - Joinville",
     companyUrl: "https://www.catolicasc.org.br/",
-    companyDescription: "A prestigious university in Brazil known for its strong emphasis on technology and innovation.",
     role: "Bachelor Software Engineering",
     period: "Fev 2026 - Fev 2030",
     tags: [""],
@@ -116,7 +113,6 @@ const FORMATION = [
   {
     company: "SENAI - Escola SESI de Referência - Joinville",
     companyUrl: "https://www.catolicasc.org.br/",
-    companyDescription: "A prestigious university in Brazil known for its strong emphasis on technology and innovation.",
     role: "Technical Degree System Development ",
     period: "Fev 2023 - Dez 2025",
     tags: [""],
