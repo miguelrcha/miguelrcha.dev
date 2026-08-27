@@ -131,13 +131,13 @@ const PROJECTS = [
     title: "Folio",
     description: "Generate a professional portfolio and ATS-friendly resume from your GitHub in under a minute. Always up to date and ready to share.",
     tags: ["TypeScript", "Next.js", "Supabase", "GitHub API"],
-    href: "https://github.com/",
+    href: "https://meufolio.dev/",
   },
   {
-    title: "Talkbridge AI",
-    description: "Interactive agentic that resides in a terminal, understands what is being transmitted via audio, and automatically translates it into any language you want to learn.",
-    tags: ["Python", "LLM Integration"],
-    href: "https://github.com/talkbridge-ai/talkbridge-ai-prospect",
+    title: "Discord Widget",
+    description: "A customizable Discord status widget for your portfolio, powered by Lanyard.",
+    tags: ["TypeScript", "Next.js", "Discord API", "Lanyard"],
+    href: "https://discord-widget-app.vercel.app/",
   }
 ];
 
