@@ -243,7 +243,7 @@ export function ActivitySection({ discordUserId, title }: { discordUserId: strin
   const cardStyle = { backgroundColor: "hsl(var(--card))", borderColor: "hsl(var(--border))" };
 
   return (
-    <section className="flex min-h-0 flex-col gap-y-3 print:hidden">
+    <section id="activity" className="flex min-h-0 flex-col gap-y-3 print:hidden">
       <div className="flex items-center gap-x-2">
         <h2 className="text-xl font-bold">{title}</h2>
         {data.discord_status !== "offline" && <OnlineDot />}

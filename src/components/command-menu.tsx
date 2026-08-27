@@ -1,6 +1,6 @@
 "use client";
 
-import { Printer, Search, X } from "lucide-react";
+import { Activity, Award, Command, Printer, Search, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 type SocialLink = { label: string; href: string; icon: React.ReactNode };
@@ -11,6 +11,10 @@ type CommandItem = {
   icon: React.ReactNode;
   onSelect: () => void;
 };
+
+function scrollToSection(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 function openLink(href: string) {
   if (href.startsWith("mailto:")) {
@@ -157,11 +161,6 @@ function CommandMenuModal({ open, onClose, actions, links }: { open: boolean; on
 
 export function CommandMenu({ socialLinks }: { socialLinks: SocialLink[] }) {
   const [open, setOpen] = useState(false);
-  const [isMac, setIsMac] = useState(false);
-
-  useEffect(() => {
-    setIsMac(/Mac|iPhone|iPod|iPad/.test(navigator.platform));
-  }, []);
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -176,6 +175,8 @@ export function CommandMenu({ socialLinks }: { socialLinks: SocialLink[] }) {
 
   const actions: CommandItem[] = [
     { id: "print", label: "Print", icon: <Printer size={16} />, onSelect: () => window.print() },
+    { id: "certifications", label: "Certifications", icon: <Award size={16} />, onSelect: () => scrollToSection("certifications") },
+    { id: "activity", label: "Activity", icon: <Activity size={16} />, onSelect: () => scrollToSection("activity") },
   ];
 
   const links: CommandItem[] = socialLinks.map((s) => ({
@@ -187,30 +188,20 @@ export function CommandMenu({ socialLinks }: { socialLinks: SocialLink[] }) {
 
   return (
     <>
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t print:hidden" style={{ borderColor: "hsl(var(--border))", backgroundColor: "hsl(var(--background))" }}>
-        <button
-          type="button"
-          onClick={() => setOpen(true)}
-          className="flex w-full items-center justify-center gap-1.5 py-[5px] font-sans text-sm font-medium transition-colors hover:bg-accent"
-          style={{ color: "hsl(var(--muted-foreground))" }}
-        >
-          <span>Press</span>
-          <kbd
-            className="inline-flex h-4 items-center gap-0.5 rounded border px-1.5 font-mono text-[11px] font-medium"
-            style={{ borderColor: "hsl(var(--border))", backgroundColor: "hsl(var(--secondary))", color: "hsl(var(--muted-foreground))" }}
-          >
-            {isMac ? (
-              <>
-                <span className="text-sm leading-none">⌘</span>
-                <span>+J</span>
-              </>
-            ) : (
-              "Ctrl +J"
-            )}
-          </kbd>
-          <span>to open the command menu</span>
-        </button>
-      </div>
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        aria-label="Open command menu"
+        className="fixed right-4 bottom-4 z-40 flex items-center justify-center rounded-full shadow-md transition-transform hover:scale-105 print:hidden"
+        style={{
+          width: 48,
+          height: 48,
+          backgroundColor: "#fff",
+          color: "#000",
+        }}
+      >
+        <Command size={20} />
+      </button>
       <CommandMenuModal open={open} onClose={() => setOpen(false)} actions={actions} links={links} />
     </>
   );

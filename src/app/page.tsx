@@ -230,8 +230,10 @@ export default function Home() {
           <header className="flex items-center justify-between">
             <div className="flex-1 space-y-1.5">
               <div className="flex items-center gap-x-2">
-                <h1 className="text-2xl font-bold">{PERSON.name}</h1>
-                <DiscordOnlineDot discordUserId={DISCORD_USER_ID} />
+                <h1 className="text-2xl font-bold">
+                  {PERSON.name}{" "}
+                  <DiscordOnlineDot discordUserId={DISCORD_USER_ID} />
+                </h1>
               </div>
               <p className="max-w-md text-pretty font-mono text-sm" style={{ color: "hsl(var(--foreground) / 0.8)" }}>
                 {PERSON.title}
@@ -390,7 +392,7 @@ export default function Home() {
           </section>
 
           {/* ── Certifications ── */}
-          <section className="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
+          <section id="certifications" className="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
             <h2 className="text-xl font-bold">Certifications</h2>
             <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
               {CERTIFICATIONS.map((cert) => {
