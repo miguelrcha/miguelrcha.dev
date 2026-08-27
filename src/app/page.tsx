@@ -278,9 +278,6 @@ export default function Home() {
                       <div className="text-sm tabular-nums shrink-0" style={{ color: "#6b7280" }}>{job.period}</div>
                     </div>
                     <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">{job.role}</h4>
-                    {job.companyDescription && (
-                      <p className="font-mono text-xs text-pretty" style={{ color: "hsl(var(--muted-foreground))" }}>{job.companyDescription}</p>
-                    )}
                   </div>
                   <div className="mt-2 text-xs font-semibold print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground))" }}>
                     <ul className="list-inside list-disc space-y-1">
@@ -314,9 +311,6 @@ export default function Home() {
                       <div className="text-sm tabular-nums shrink-0" style={{ color: "#6b7280" }}>{education.period}</div>
                     </div>
                     <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">{education.role}</h4>
-                    {education.companyDescription && (
-                      <p className="font-mono text-xs text-pretty" style={{ color: "hsl(var(--muted-foreground))" }}>{education.companyDescription}</p>
-                    )}
                   </div>
                   <div className="mt-2 text-xs font-semibold print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground))" }}>
                     <ul className="list-inside list-disc space-y-1">
