@@ -161,6 +161,11 @@ function CommandMenuModal({ open, onClose, actions, links }: { open: boolean; on
 
 export function CommandMenu({ socialLinks }: { socialLinks: SocialLink[] }) {
   const [open, setOpen] = useState(false);
+  const [isMac, setIsMac] = useState(false);
+
+  useEffect(() => {
+    setIsMac(/Mac|iPhone|iPod|iPad/.test(navigator.platform));
+  }, []);
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -192,7 +197,7 @@ export function CommandMenu({ socialLinks }: { socialLinks: SocialLink[] }) {
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Open command menu"
-        className="fixed right-4 bottom-4 z-40 flex items-center justify-center rounded-full shadow-md transition-transform hover:scale-105 print:hidden"
+        className="fixed right-4 bottom-4 z-40 flex items-center justify-center rounded-full shadow-md transition-transform hover:scale-105 md:hidden print:hidden"
         style={{
           width: 48,
           height: 48,
@@ -202,6 +207,30 @@ export function CommandMenu({ socialLinks }: { socialLinks: SocialLink[] }) {
       >
         <Command size={20} />
       </button>
+      <div className="fixed inset-x-0 bottom-0 z-40 hidden border-t md:block print:hidden" style={{ borderColor: "hsl(var(--border))", backgroundColor: "hsl(var(--background))" }}>
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          className="flex w-full items-center justify-center gap-1.5 py-[5px] font-sans text-sm font-medium transition-colors hover:bg-accent"
+          style={{ color: "hsl(var(--muted-foreground))" }}
+        >
+          <span>Press</span>
+          <kbd
+            className="inline-flex h-4 items-center gap-0.5 rounded border px-1.5 font-mono text-[11px] font-medium"
+            style={{ borderColor: "hsl(var(--border))", backgroundColor: "hsl(var(--secondary))", color: "hsl(var(--muted-foreground))" }}
+          >
+            {isMac ? (
+              <>
+                <span className="text-sm leading-none">⌘</span>
+                <span>+J</span>
+              </>
+            ) : (
+              "Ctrl +J"
+            )}
+          </kbd>
+          <span>to open the command menu</span>
+        </button>
+      </div>
       <CommandMenuModal open={open} onClose={() => setOpen(false)} actions={actions} links={links} />
     </>
   );
