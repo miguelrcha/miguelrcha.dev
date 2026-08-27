@@ -2,7 +2,8 @@ import { Globe, Mail } from "lucide-react";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 import Image from "next/image";
-import { ActivitySection } from "@/components/activity-section";
+import { ActivitySection, DiscordOnlineDot } from "@/components/activity-section";
+import { DISCORD_USER_ID } from "@/lib/discord";
 import { CommandMenu } from "@/components/command-menu";
 
 // ── Brand SVG icons ───────────────────────────────────────────────────────────
@@ -162,8 +163,6 @@ const CERTIFICATIONS = [
   },
 ];
 
-const DISCORD_USER_ID = "1538557691570556958";
-
 // ── Sub-components ────────────────────────────────────────────────────────────
 
 function SocialButton({ href, label, children }: { href: string; label: string; children: React.ReactNode }) {
@@ -230,7 +229,10 @@ export default function Home() {
           {/* ── Header ── */}
           <header className="flex items-center justify-between">
             <div className="flex-1 space-y-1.5">
-              <h1 className="text-2xl font-bold">{PERSON.name}</h1>
+              <div className="flex items-center gap-x-2">
+                <h1 className="text-2xl font-bold">{PERSON.name}</h1>
+                <DiscordOnlineDot discordUserId={DISCORD_USER_ID} />
+              </div>
               <p className="max-w-md text-pretty font-mono text-sm" style={{ color: "hsl(var(--foreground) / 0.8)" }}>
                 {PERSON.title}
               </p>

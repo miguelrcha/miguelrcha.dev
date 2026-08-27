@@ -197,10 +197,15 @@ function useLanyard(userId: string | undefined) {
 
 function resolveActivityImage(activity: LanyardActivity): string | undefined {
   const asset = activity.assets?.large_image;
-  if (!asset) return undefined;
-  if (asset.startsWith("mp:")) return `https://media.discordapp.net/${asset.slice(3)}`;
-  if (asset.startsWith("spotify:")) return `https://i.scdn.co/image/${asset.slice(8)}`;
-  if (activity.application_id) return `https://cdn.discordapp.com/app-assets/${activity.application_id}/${asset}.png`;
+  if (asset) {
+    if (asset.startsWith("mp:")) return `https://media.discordapp.net/${asset.slice(3)}`;
+    if (asset.startsWith("spotify:")) return `https://i.scdn.co/image/${asset.slice(8)}`;
+    if (activity.application_id) return `https://cdn.discordapp.com/app-assets/${activity.application_id}/${asset}.png`;
+  }
+  // Most games don't send a rich-presence asset, only an application id.
+  // dcdn.dstn.to mirrors Discord's (otherwise unauthenticated-API-only)
+  // app icons, so this still gets a picture for a plain "Playing X" activity.
+  if (activity.application_id) return `https://dcdn.dstn.to/app-icons/${activity.application_id}.png`;
   return undefined;
 }
 
@@ -208,6 +213,23 @@ function ActivityCardImage({ image, alt }: { image?: string; alt: string }) {
   if (!image) return null;
   // eslint-disable-next-line @next/next/no-img-element
   return <img src={image} alt={alt} className="aspect-square h-14 shrink-0 rounded-md object-cover" />;
+}
+
+function OnlineDot() {
+  return (
+    <span className="relative inline-flex h-2.5 w-2.5 shrink-0" title="Online" aria-label="Online">
+      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75" />
+      <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-500" />
+    </span>
+  );
+}
+
+// Standalone dot for use outside ActivitySection (e.g. next to the name in
+// the page header), sharing the same live Lanyard subscription.
+export function DiscordOnlineDot({ discordUserId }: { discordUserId: string }) {
+  const data = useLanyard(discordUserId);
+  if (!data || data.discord_status === "offline") return null;
+  return <OnlineDot />;
 }
 
 export function ActivitySection({ discordUserId, title }: { discordUserId: string; title: string }) {
@@ -222,7 +244,10 @@ export function ActivitySection({ discordUserId, title }: { discordUserId: strin
 
   return (
     <section className="flex min-h-0 flex-col gap-y-3 print:hidden">
-      <h2 className="text-xl font-bold">{title}</h2>
+      <div className="flex items-center gap-x-2">
+        <h2 className="text-xl font-bold">{title}</h2>
+        {data.discord_status !== "offline" && <OnlineDot />}
+      </div>
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
         {data.spotify && (
           <a

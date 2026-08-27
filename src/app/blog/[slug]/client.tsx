@@ -6,6 +6,8 @@ import rehypeRaw from "rehype-raw";
 import { useRouter } from "next/navigation";
 import type { BlogPost } from "@/lib/blog";
 import { Globe, Mail } from "lucide-react";
+import { DiscordOnlineDot } from "@/components/activity-section";
+import { DISCORD_USER_ID } from "@/lib/discord";
 
 /* ── SocialButton (igual page) ── */
 function SocialButton({ href, label, children }: { href: string; label: string; children: React.ReactNode }) {
@@ -169,7 +171,10 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
         {/* 🔥 PERSON FINAL (IGUAL AO PAGE) */}
         <div className="flex items-center justify-between pt-8" style={{ borderTop: "1px solid hsl(var(--border))" }}>
           <div className="flex-1 space-y-1.5">
-            <h1 className="text-2xl font-bold">{PERSON.name}</h1>
+            <div className="flex items-center gap-x-2">
+              <h1 className="text-2xl font-bold">{PERSON.name}</h1>
+              <DiscordOnlineDot discordUserId={DISCORD_USER_ID} />
+            </div>
 
             <p className="max-w-md text-pretty font-mono text-sm" style={{ color: "hsl(var(--foreground) / 0.8)" }}>
               {PERSON.title}
