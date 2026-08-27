@@ -1,5 +1,5 @@
 ---
-title: "mdx setup tester"
+title: "json test"
 description: "This is my first post with MDX setup. (test post)"
 tags: ["Personal", "MDX"]
 date: "2026-03-30"

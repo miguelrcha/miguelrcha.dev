@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 import Image from "next/image";
 import { ActivitySection } from "@/components/activity-section";
+import { CommandMenu } from "@/components/command-menu";
 
 // ── Brand SVG icons ───────────────────────────────────────────────────────────
 function GithubIcon({ size = 14 }: { size?: number }) {
@@ -222,7 +223,7 @@ export default function Home() {
     <>
       <main
         style={{ maxWidth: "1400px" }}
-        className="relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-11"
+        className="relative mx-auto scroll-my-12 overflow-auto p-4 pb-14 md:p-16 print:p-11"
       >
         <div className="mx-auto w-full max-w-2xl space-y-8 print:space-y-4" style={{ backgroundColor: "#fff" }}>
 
@@ -279,7 +280,7 @@ export default function Home() {
                     </div>
                     <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">{job.role}</h4>
                   </div>
-                  <div className="mt-2 text-xs font-semibold print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground))" }}>
+                  <div className="mt-2 text-xs font-medium print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground))" }}>
                     <ul className="list-inside list-disc space-y-1">
                       {job.bullets.map((bullet, i) => <li key={i}>{bullet}</li>)}
                     </ul>
@@ -312,7 +313,7 @@ export default function Home() {
                     </div>
                     <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">{education.role}</h4>
                   </div>
-                  <div className="mt-2 text-xs font-semibold print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground))" }}>
+                  <div className="mt-2 text-xs font-medium print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground))" }}>
                     <ul className="list-inside list-disc space-y-1">
                       {education.bullets.map((bullet, i) => <li key={i}>{bullet}</li>)}
                     </ul>
@@ -429,6 +430,7 @@ export default function Home() {
         </div>
       </main>
 
+      <CommandMenu socialLinks={PERSON.social.filter((s) => s.label !== "Folio")} />
     </>
   );
 }
