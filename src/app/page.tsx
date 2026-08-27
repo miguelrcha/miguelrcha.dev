@@ -2,6 +2,7 @@ import { Globe, Mail } from "lucide-react";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 import Image from "next/image";
+import { ActivitySection } from "@/components/activity-section";
 
 // ── Brand SVG icons ───────────────────────────────────────────────────────────
 function GithubIcon({ size = 14 }: { size?: number }) {
@@ -143,6 +144,25 @@ const SKILLS = [
   "MySQL", "PostgreSQL", "Supabase", "REST API", "Claude Code", "Software Architecture", "Git", "Cloudflare", "Arduino", "ESP32",
 ];
 
+const CERTIFICATIONS = [
+  {
+    title: "Certificação Fábrica de Software",
+    issuer: "SENAI/SC - Serviço Nacional de Aprendizagem Industrial",
+    certificationImage: "https://media.licdn.com/dms/image/v2/D4D0BAQHsgalvnPa8RA/company-logo_100_100/B4DZygYXO8JkAU-/0/1772217267853/senai_sc_logo?e=1789603200&v=beta&t=svtAWgRwjFCPlYFWftPk8L7ez8k9Tq9-OW8fF7d_Rrw",
+    date: "Dez 2025",
+    href: "",
+  },
+  {
+    title: "Certificação Lógica de Desenvolvimento de Sistemas",
+    issuer: "SENAI/SC - Serviço Nacional de Aprendizagem Industrial",
+    certificationImage: "https://media.licdn.com/dms/image/v2/D4D0BAQHsgalvnPa8RA/company-logo_100_100/B4DZygYXO8JkAU-/0/1772217267853/senai_sc_logo?e=1789603200&v=beta&t=svtAWgRwjFCPlYFWftPk8L7ez8k9Tq9-OW8fF7d_Rrw",
+    date: "Set 2023",
+    href: "",
+  },
+];
+
+const DISCORD_USER_ID = "1538557691570556958";
+
 // ── Sub-components ────────────────────────────────────────────────────────────
 
 function SocialButton({ href, label, children }: { href: string; label: string; children: React.ReactNode }) {
@@ -262,7 +282,7 @@ export default function Home() {
                       <p className="font-mono text-xs text-pretty" style={{ color: "hsl(var(--muted-foreground))" }}>{job.companyDescription}</p>
                     )}
                   </div>
-                  <div className="mt-2 text-xs print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground) / 0.8)" }}>
+                  <div className="mt-2 text-xs font-semibold print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground))" }}>
                     <ul className="list-inside list-disc space-y-1">
                       {job.bullets.map((bullet, i) => <li key={i}>{bullet}</li>)}
                     </ul>
@@ -298,7 +318,7 @@ export default function Home() {
                       <p className="font-mono text-xs text-pretty" style={{ color: "hsl(var(--muted-foreground))" }}>{education.companyDescription}</p>
                     )}
                   </div>
-                  <div className="mt-2 text-xs print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground) / 0.8)" }}>
+                  <div className="mt-2 text-xs font-semibold print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground))" }}>
                     <ul className="list-inside list-disc space-y-1">
                       {education.bullets.map((bullet, i) => <li key={i}>{bullet}</li>)}
                     </ul>
@@ -371,6 +391,47 @@ export default function Home() {
               ))}
             </div>
           </section>
+
+          {/* ── Certifications ── */}
+          <section className="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
+            <h2 className="text-xl font-bold">Certifications</h2>
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+              {CERTIFICATIONS.map((cert) => {
+                const card = (
+                  <div
+                    className="rounded-lg border flex h-full items-center gap-x-3 overflow-hidden p-3 transition-colors hover:bg-accent"
+                    style={{ backgroundColor: "hsl(var(--card))", borderColor: "hsl(var(--border))" }}
+                    role="article"
+                  >
+                    {cert.certificationImage && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={cert.certificationImage}
+                        alt={cert.title}
+                        className="shrink-0 rounded-md"
+                        style={{ width: 48, height: 48, objectFit: "contain" }}
+                      />
+                    )}
+                    <div className="flex min-w-0 flex-col space-y-1">
+                      <h3 className="truncate text-sm font-semibold leading-tight tracking-tight">{cert.title}</h3>
+                      <p className="truncate font-mono text-xs" style={{ color: "hsl(var(--foreground) / 0.8)" }}>{cert.issuer}</p>
+                      <p className="font-mono text-xs tabular-nums" style={{ color: "hsl(var(--muted-foreground))" }}>{cert.date}</p>
+                    </div>
+                  </div>
+                );
+                return cert.href ? (
+                  <a key={cert.title} href={cert.href} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+                    {card}
+                  </a>
+                ) : (
+                  <div key={cert.title}>{card}</div>
+                );
+              })}
+            </div>
+          </section>
+
+          {/* ── Activity ── */}
+          <ActivitySection discordUserId={DISCORD_USER_ID} title="Activity" />
         </div>
       </main>
 
