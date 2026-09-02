@@ -79,7 +79,7 @@ const PERSON = {
 const WORK_EXPERIENCE = [
   {
     company: "RCH Labs",
-    companyUrl: "",
+    companyUrl: "https://rchlabs.vercel.app/",
     role: "CEO & Founder",
     period: "Jul 2026 - Present",
     tags: ["Startup"],
