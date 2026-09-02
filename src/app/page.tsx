@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ActivitySection, DiscordOnlineDot } from "@/components/activity-section";
 import { DISCORD_USER_ID } from "@/lib/discord";
 import { CommandMenu } from "@/components/command-menu";
+import { CompanyHoverCard } from "@/components/company-hover-card";
 
 // ── Brand SVG icons ───────────────────────────────────────────────────────────
 function GithubIcon({ size = 14 }: { size?: number }) {
@@ -76,18 +77,18 @@ const PERSON = {
 };
 
 const WORK_EXPERIENCE = [
-{
-  company: "RCH Labs",
-  companyUrl: "",
-  role: "CEO & Founder",
-  period: "Jul 2026 - Present",
-  tags: ["Startup"],
-  bullets: [
-    "Founded RCH Labs, an AI-powered software studio focused on building modern web applications, SaaS products, and custom software for businesses.",
-    "Leading end-to-end product development, from requirements gathering and UI/UX design to backend architecture, cloud infrastructure, deployment, and maintenance.",
-    "Building scalable solutions using TypeScript, React, Next.js, Java, Spring Boot, PostgreSQL, Docker, and AI technologies while managing client relationships and product strategy."
-  ],
-},
+  {
+    company: "RCH Labs",
+    companyUrl: "",
+    role: "CEO & Founder",
+    period: "Jul 2026 - Present",
+    tags: ["Startup"],
+    bullets: [
+      "Founded RCH Labs, an AI-powered software studio focused on building modern web applications, SaaS products, and custom software for businesses.",
+      "Leading end-to-end product development, from requirements gathering and UI/UX design to backend architecture, cloud infrastructure, deployment, and maintenance.",
+      "Building scalable solutions using TypeScript, React, Next.js, Java, Spring Boot, PostgreSQL, Docker, and AI technologies while managing client relationships and product strategy."
+    ],
+  },
   {
     company: "ArcelorMittal Brasil",
     companyUrl: "https://brasil.arcelormittal.com/",
@@ -110,18 +111,19 @@ const FORMATION = [
     period: "Fev 2026 - Fev 2030",
     tags: [""],
     bullets: [
-      "Currently pursuing a degree in Software Engineering at Católica SC (1st semester), building foundational knowledge in programming, systems development, and software design principles.",
+      "",
     ],
   },
   {
     company: "SENAI - Escola SESI de Referência - Joinville",
-    companyUrl: "https://www.catolicasc.org.br/",
-    role: "Technical Degree System Development ",
+    companyUrl: "https://www.sc.senai.br/",
+    role: "Technical Degree System Development",
     period: "Fev 2023 - Dez 2025",
     tags: [""],
     bullets: [
-      "Built Smarttrain during a technical course at SENAI/SC Joinville, developing a mobile app and web platform for railway management focused on Smart Cities and Digital Transformation in Transportation. Worked on UX/UI mobile-first mockups, website development, database implementation, and real-time dashboard features for train status, schedules, alerts, route management, preventive maintenance, performance reports, and energy consumption analysis.",
-      "Also presented the project at multiple SENAI Family Day events, showcasing its impact on innovation and transportation digitalization.",
+      "Developed a SmartTrain, mobile-first and web platform for smart railway management with real-time Arduino, ESP32 integration.",
+      "Built features for train monitoring, schedules, alerts, routes, preventive maintenance, and energy analysis.",
+      "Presented the project at SENAI Family Day events, showcasing innovation in transportation digitalization.",
     ],
   }
 ]
@@ -142,7 +144,7 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  "Java", "Spring Boot", "React/Next.js", "Typescript", "Golang",
+  "Java", "Spring Boot", "React/Next.js", "Typescript", "Node.js", "C++", "Python",
   "MySQL", "PostgreSQL", "Supabase", "REST API", "Claude Code", "Software Architecture", "Git", "Cloudflare", "Arduino", "ESP32",
 ];
 
@@ -275,7 +277,7 @@ export default function Home() {
                   <div className="flex flex-col space-y-1.5 print:space-y-1">
                     <div className="flex items-center justify-between gap-x-2 text-base">
                       <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none flex-wrap gap-y-1">
-                        <a href={job.companyUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">{job.company}</a>
+                        <CompanyHoverCard name={job.company} url={job.companyUrl} className="hover:underline" />
                         <ul className="list-none p-0 hidden gap-x-1 sm:inline-flex">
                           {job.tags.map((tag) => <li key={tag}><SecondaryBadge>{tag}</SecondaryBadge></li>)}
                         </ul>
@@ -308,7 +310,7 @@ export default function Home() {
                   <div className="flex flex-col space-y-1.5 print:space-y-1">
                     <div className="flex items-center justify-between gap-x-2 text-base">
                       <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none flex-wrap gap-y-1">
-                        <a href={education.companyUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">{education.company}</a>
+                        <CompanyHoverCard name={education.company} url={education.companyUrl} className="hover:underline" />
                         <ul className="list-none p-0 hidden gap-x-1 sm:inline-flex">
                           {education.tags.map((tag) => <li key={tag}><SecondaryBadge>{tag}</SecondaryBadge></li>)}
                         </ul>
@@ -317,11 +319,15 @@ export default function Home() {
                     </div>
                     <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">{education.role}</h4>
                   </div>
-                  <div className="mt-2 text-xs font-medium print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground))" }}>
-                    <ul className="list-inside list-disc space-y-1">
-                      {education.bullets.map((bullet, i) => <li key={i}>{bullet}</li>)}
-                    </ul>
-                  </div>
+                  {education.bullets.filter((bullet) => bullet.trim().length > 0).length > 0 && (
+                    <div className="mt-2 text-xs font-medium print:mt-1 print:text-[10px] text-pretty" style={{ color: "hsl(var(--foreground))" }}>
+                      <ul className="list-inside list-disc space-y-1">
+                        {education.bullets
+                          .filter((bullet) => bullet.trim().length > 0)
+                          .map((bullet, i) => <li key={i}>{bullet}</li>)}
+                      </ul>
+                    </div>
+                  )}
                   <div className="mt-2 sm:hidden">
                     <ul className="inline-flex list-none p-0 -mx-2 flex-wrap gap-1">
                       {education.tags.map((tag) => <li key={tag}><SecondaryBadge>{tag}</SecondaryBadge></li>)}
