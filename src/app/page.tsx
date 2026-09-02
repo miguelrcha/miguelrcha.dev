@@ -145,7 +145,7 @@ const PROJECTS = [
 
 const SKILLS = [
   "Java", "Spring Boot", "React/Next.js", "Typescript", "Node.js", "C++", "Python",
-  "MySQL", "PostgreSQL", "Supabase", "REST API", "Claude Code", "Software Architecture", "Git", "Cloudflare", "Arduino", "ESP32",
+  "MySQL", "PostgreSQL", "Supabase", "Docker", "REST API", "Claude Code", "Software Architecture", "Git", "Cloudflare", "Arduino", "ESP32",
 ];
 
 const CERTIFICATIONS = [
