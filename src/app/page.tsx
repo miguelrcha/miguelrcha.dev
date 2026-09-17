@@ -65,7 +65,7 @@ const PERSON = {
   name: "Miguel Rocha Xavier",
   title: "Intern Software Engineer",
   location: "Brazil",
-  avatar: "https://github.com/miguelrcha.png", // Att profile icon
+  avatar: "/avatar.png", // LinkedIn profile photo
   social: [
     { label: "Email", href: "mailto:contact.miguellrochaxavier@gmail.com", icon: <Mail size={16} /> },
     { label: "GitHub", href: "https://github.com/miguelrcha", icon: <GithubIcon size={16} /> },
@@ -152,14 +152,14 @@ const CERTIFICATIONS = [
   {
     title: "Certificação Fábrica de Software",
     issuer: "SENAI/SC - Serviço Nacional de Aprendizagem Industrial",
-    certificationImage: "https://media.licdn.com/dms/image/v2/D4D0BAQHsgalvnPa8RA/company-logo_100_100/B4DZygYXO8JkAU-/0/1772217267853/senai_sc_logo?e=1789603200&v=beta&t=svtAWgRwjFCPlYFWftPk8L7ez8k9Tq9-OW8fF7d_Rrw",
+    certificationImage: "/senai-sc-logo.jpg",
     date: "Dez 2025",
     href: "",
   },
   {
     title: "Certificação Lógica de Desenvolvimento de Sistemas",
     issuer: "SENAI/SC - Serviço Nacional de Aprendizagem Industrial",
-    certificationImage: "https://media.licdn.com/dms/image/v2/D4D0BAQHsgalvnPa8RA/company-logo_100_100/B4DZygYXO8JkAU-/0/1772217267853/senai_sc_logo?e=1789603200&v=beta&t=svtAWgRwjFCPlYFWftPk8L7ez8k9Tq9-OW8fF7d_Rrw",
+    certificationImage: "/senai-sc-logo.jpg",
     date: "Set 2023",
     href: "",
   },
