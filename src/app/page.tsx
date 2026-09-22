@@ -140,6 +140,12 @@ const PROJECTS = [
     description: "A customizable Discord status widget for your portfolio, powered by Lanyard.",
     tags: ["TypeScript", "Next.js", "Discord API", "Lanyard"],
     href: "https://discord-widget-app.vercel.app/",
+  },
+  {
+    title: "Pawoutlove",
+    description: "E-commerce platform for a jewelry store based in Orlando, Florida, featuring product catalog, online shopping, secure checkout, customer accounts, and order management.",
+    tags: ["TypeScript", "Next.js", "Shopify"],
+    href: "https://pawoutlove.com/",
   }
 ];
 
