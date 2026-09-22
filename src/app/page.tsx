@@ -108,7 +108,7 @@ const FORMATION = [
     company: "Centro Universitário Católica de Santa Catarina - Joinville",
     companyUrl: "https://www.catolicasc.org.br/",
     role: "Bachelor Software Engineering",
-    period: "Fev 2026 - Fev 2030",
+    period: "Fev 2026 - Fev 2029",
     tags: [""],
     bullets: [
       "",
