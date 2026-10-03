@@ -65,7 +65,7 @@ const PERSON = {
   name: "Miguel Rocha Xavier",
   title: "Intern Software Engineer",
   location: "Brazil",
-  avatar: "/avatar.png", // LinkedIn profile photo
+  avatar: "https://github.com/miguelrcha.png", 
   social: [
     { label: "Email", href: "mailto:contact.miguellrochaxavier@gmail.com", icon: <Mail size={16} /> },
     { label: "GitHub", href: "https://github.com/miguelrcha", icon: <GithubIcon size={16} /> },
