@@ -78,18 +78,6 @@ const PERSON = {
 
 const WORK_EXPERIENCE = [
   {
-    company: "RCH Labs",
-    companyUrl: "https://rchlabs.vercel.app/",
-    role: "CEO & Founder",
-    period: "Jul 2026 - Present",
-    tags: ["Startup"],
-    bullets: [
-      "Founded RCH Labs, an AI-powered software studio focused on building modern web applications, SaaS products, and custom software for businesses.",
-      "Leading end-to-end product development, from requirements gathering and UI/UX design to backend architecture, cloud infrastructure, deployment, and maintenance.",
-      "Building scalable solutions using TypeScript, React, Next.js, Java, Spring Boot, PostgreSQL, Docker, and AI technologies while managing client relationships and product strategy."
-    ],
-  },
-  {
     company: "ArcelorMittal Brasil",
     companyUrl: "https://brasil.arcelormittal.com/",
     role: "Software Developer",
@@ -98,6 +86,17 @@ const WORK_EXPERIENCE = [
     bullets: [
       "Worked on a STEM scholarship program focused on process transformation and the creation of digital solutions that drive operational efficiency and data-driven decision-making.",
       "With a strong focus on System Development, I design and build scalable applications using Power Platform, developing advanced dashboards and automated workflows to ensure productivity, reduce rework, and optimize user experience.",
+    ],
+  },
+  {
+    company: "Freelancer",
+    companyUrl: "https://rchlabs.vercel.app/",
+    role: "Software Engineer",
+    period: "May 2025 - Present",
+    tags: ["Remote", "React", "Typescript", "Node.js"],
+    bullets: [
+      "Pawoutlove: Built a fully functional Orlando e-commerce system tailored to the jewlery market.",
+      "Quadrum Esquadrias: Built a clean landing page with Typescript/React ",
     ],
   },
 
