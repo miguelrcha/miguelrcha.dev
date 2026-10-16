@@ -129,6 +129,12 @@ const FORMATION = [
 
 const PROJECTS = [
   {
+    title: "Proud",
+    description: "The Dynamic Island for your Mac, with built-in AI agents, focus sessions and smart notifications.",
+    tags: ["Swift", "SwiftUI", "PostgreSQL"],
+    href: "https://proud-app.vercel.app",
+  },
+  {
     title: "Folio",
     description: "Generate a professional portfolio and ATS-friendly resume from your GitHub in under a minute. Always up to date and ready to share.",
     tags: ["TypeScript", "Next.js", "Supabase", "GitHub API"],
@@ -149,7 +155,7 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  "Java", "Spring Boot", "React/Next.js", "Typescript", "Node.js", "C++", "Python",
+  "Java", "Spring Boot", "React/Next.js", "Typescript", "Node.js", "C++", "Swift", "SwiftUI",
   "MySQL", "PostgreSQL", "Supabase", "Docker", "REST API", "Claude Code", "Software Architecture", "Git", "Cloudflare", "Arduino", "ESP32",
 ];
 
